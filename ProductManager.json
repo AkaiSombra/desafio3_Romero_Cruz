@@ -1,0 +1,42 @@
+[
+  {
+    "id": 0,
+    "title": "Lies of P",
+    "description": "A Souls-like videogame",
+    "price": 40,
+    "thumbnail": "LiesofP.jpg",
+    "code": 2873,
+    "stock": true,
+    "path": "/products/img/LiesOfP.jpg"
+  },
+  {
+    "id": 1,
+    "title": "Sekiro: Shadow Die Twice",
+    "description": "Souls-like game with katanas",
+    "price": 60,
+    "thumbnail": "Sekiro.jpg",
+    "code": 2875,
+    "stock": true,
+    "path": "/products/img/Sekiro.jpg"
+  },
+  {
+    "title": "Elden Ring",
+    "description": "Lastest game of From Software",
+    "price": 60,
+    "thumbnail": "eldenring.jpg",
+    "code": "2875",
+    "stock": true,
+    "path": "/products/img/EldenRing.jpg",
+    "id": 2
+  },
+  {
+    "id": 3,
+    "title": "Neon White",
+    "description": "A Parkour game",
+    "price": 20,
+    "thumbnail": "NeonWhite.jpg",
+    "code": 1268,
+    "stock": true,
+    "path": "/products/img/NeonWhite.jpg"
+  }
+]
