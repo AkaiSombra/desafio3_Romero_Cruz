@@ -1,6 +1,8 @@
 
 import fs from 'fs'
 import express from 'express'
+import { error } from 'console'
+import { type } from 'os'
 
 const PORT = 8080
 const productManagerPath = "../ProductManager.json"
@@ -24,7 +26,9 @@ app.get('/products', (req, res) => {
     const limit = req.query.limit
 
     if (limit){
-        res.send(productManager[limit])
+        const parsedLimit = parseInt(limit)
+        const limitedProducts = productManager.slice(0, parsedLimit)
+        res.send(limitedProducts)
     } else {
         res.send(productManager)
     }
@@ -35,10 +39,16 @@ app.get('/products/:pid', (req, res) => {
     
     const searchById = (pid) => {
         const productById = productManager.find(productManager => productManager.id === pid)
-        return productById
+        return productById || `Error, product with id ${pid} not exist`
     }
 
-    res.send(searchById(pid))
+    searchById(pid)
+     if(searchById){
+        res.send(searchById(pid)) 
+    } else {
+        res.send()
+    } 
+
 })
 
 app.listen(PORT, () => {
