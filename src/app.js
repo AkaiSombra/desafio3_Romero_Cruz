@@ -17,7 +17,6 @@ const productManagerTransform = () =>{
 
 const productManager = productManagerTransform()
 
-
 const app = express()
 app.use(express.urlencoded({ extended: true }))
 
@@ -32,7 +31,14 @@ app.get('/products', (req, res) => {
 })
 
 app.get('/products/:pid', (req, res) => {
-    res.send(productManager[req.params.pid])
+    let pid = parseInt(req.params.pid)
+    
+    const searchById = (pid) => {
+        const productById = productManager.find(productManager => productManager.id === pid)
+        return productById
+    }
+
+    res.send(searchById(pid))
 })
 
 app.listen(PORT, () => {

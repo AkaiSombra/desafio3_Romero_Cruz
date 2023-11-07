@@ -5,7 +5,7 @@ import { json } from 'stream/consumers'
 
 class ProductManager{
     static products = []
-    static id = 0
+    static id = 1
 
     constructor(title, description, price, thumbnail, code, stock, path){
         this.id = ProductManager.id++
@@ -94,20 +94,27 @@ ProductManager.addProduct("Lies of P", "A Souls-like videogame", 40, "LiesofP.jp
 ProductManager.addProduct("Sekiro: Shadow Die Twice", "Souls-like game with katanas", 60, "Sekiro.jpg", 2875, true, '/products/img/Sekiro.jpg')
 ProductManager.addProduct("Shadow of doubt", "A Detective sandbox game", 15, "ShadowOfDobut.jpg", 1168, true, '/products/img/ShadowOfDobut.jpg')
 ProductManager.addProduct("Neon White", "A Parkour game", 20, "NeonWhite.jpg", 1268, true, '/products/img/NeonWhite.jpg')
+ProductManager.addProduct("Elden Ring", "Lastest game of From Software", 60, "eldenring.jpg", 2845, true, '/products/img/EldenRing.jpg')
+ProductManager.addProduct("The legend of Zelda: Tears of the Kingdom", "RPG open world", 60, "totk.jpg", 2738, true, '/products/img/totk.jpg')
+ProductManager.addProduct("The legend of Zelda: Breath of the Wild", "RPG open world", 60, "botw.jpg", 2138, true, '/products/img/botw.jpg')
+ProductManager.addProduct("Date a Live: Rio reincarnation", "Visual novel based from Date a live anime series", 15, "DateaLive.jpg", 1832, true, '/products/img/DateaLive.jpg')
+ProductManager.addProduct("Rewrite+", "Visual novel", 20, "Rewrite.jpg", 3971, true, '/products/img/Rewrite.jpg')
+ProductManager.addProduct("Cuphead", "Challenger game run n gun", 15, "Cuphead.jpg", 1828, true, '/products/img/Cuphead.jpg')
+ProductManager.addProduct("Fire Emblem Engage", "A Classic JRPG", 60, "FireEmblemEngage.jpg", 9472, true, '/products/img/FireEmblemEngage.jpg') 
 
-const allProducts = ProductManager.getProducts()
-console.log(allProducts)
+/* const allProducts = ProductManager.getProducts()
+console.log(allProducts) */
 
 //console.log(ProductManager.products)
 
-const productById = ProductManager.getProductById(2)
-console.log(productById)
+/* const productById = ProductManager.getProductById(2)
+console.log(productById) */
 
 // const nonExistentProduct = ProductManager.getProductById(10)
 
 
 
-ProductManager.updateProduct(2, {
+/* ProductManager.updateProduct(2, {
   title: "Elden Ring",
   description: "Lastest game of From Software",
   price: 60,
@@ -123,7 +130,7 @@ console.log(ProductManager.getProductById(2))
 
 ProductManager.deleteProduct(4)
 
-console.log(ProductManager.getProducts())
+console.log(ProductManager.getProducts()) */
 
 const JSONPath = './ProductManager.json'
 

@@ -1,6 +1,6 @@
 [
   {
-    "id": 0,
+    "id": 1,
     "title": "Lies of P",
     "description": "A Souls-like videogame",
     "price": 40,
@@ -10,7 +10,7 @@
     "path": "/products/img/LiesOfP.jpg"
   },
   {
-    "id": 1,
+    "id": 2,
     "title": "Sekiro: Shadow Die Twice",
     "description": "Souls-like game with katanas",
     "price": 60,
@@ -20,17 +20,17 @@
     "path": "/products/img/Sekiro.jpg"
   },
   {
-    "title": "Elden Ring",
-    "description": "Lastest game of From Software",
-    "price": 60,
-    "thumbnail": "eldenring.jpg",
-    "code": "2875",
+    "id": 3,
+    "title": "Shadow of doubt",
+    "description": "A Detective sandbox game",
+    "price": 15,
+    "thumbnail": "ShadowOfDobut.jpg",
+    "code": 1168,
     "stock": true,
-    "path": "/products/img/EldenRing.jpg",
-    "id": 2
+    "path": "/products/img/ShadowOfDobut.jpg"
   },
   {
-    "id": 3,
+    "id": 4,
     "title": "Neon White",
     "description": "A Parkour game",
     "price": 20,
@@ -38,5 +38,75 @@
     "code": 1268,
     "stock": true,
     "path": "/products/img/NeonWhite.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Elden Ring",
+    "description": "Lastest game of From Software",
+    "price": 60,
+    "thumbnail": "eldenring.jpg",
+    "code": 2845,
+    "stock": true,
+    "path": "/products/img/EldenRing.jpg"
+  },
+  {
+    "id": 6,
+    "title": "The legend of Zelda: Tears of the Kingdom",
+    "description": "RPG open world",
+    "price": 60,
+    "thumbnail": "totk.jpg",
+    "code": 2738,
+    "stock": true,
+    "path": "/products/img/totk.jpg"
+  },
+  {
+    "id": 7,
+    "title": "The legend of Zelda: Breath of the Wild",
+    "description": "RPG open world",
+    "price": 60,
+    "thumbnail": "botw.jpg",
+    "code": 2138,
+    "stock": true,
+    "path": "/products/img/botw.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Date a Live: Rio reincarnation",
+    "description": "Visual novel based from Date a live anime series",
+    "price": 15,
+    "thumbnail": "DateaLive.jpg",
+    "code": 1832,
+    "stock": true,
+    "path": "/products/img/DateaLive.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Rewrite+",
+    "description": "Visual novel",
+    "price": 20,
+    "thumbnail": "Rewrite.jpg",
+    "code": 3971,
+    "stock": true,
+    "path": "/products/img/Rewrite.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Cuphead",
+    "description": "Challenger game run n gun",
+    "price": 15,
+    "thumbnail": "Cuphead.jpg",
+    "code": 1828,
+    "stock": true,
+    "path": "/products/img/Cuphead.jpg"
+  },
+  {
+    "id": 11,
+    "title": "Fire Emblem Engage",
+    "description": "A Classic JRPG",
+    "price": 60,
+    "thumbnail": "FireEmblemEngage.jpg",
+    "code": 9472,
+    "stock": true,
+    "path": "/products/img/FireEmblemEngage.jpg"
   }
 ]
