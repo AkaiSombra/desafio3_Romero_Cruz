@@ -27,26 +27,27 @@ app.get('/products', (req, res) => {
 
     if (limit){
         const parsedLimit = parseInt(limit)
-        const limitedProducts = productManager.slice(0, parsedLimit)
-        res.send(limitedProducts)
+        if(parsedLimit < 1){
+            return res.status(400).send(`ID incorrecto`)
+        } else {
+            const limitedProducts = productManager.slice(0, parsedLimit)
+            res.send(limitedProducts)
+        }
     } else {
         res.send(productManager)
     }
 })
 
 app.get('/products/:pid', (req, res) => {
-    let pid = parseInt(req.params.pid)
+    const pid = parseInt(req.params.pid)
     
-    const searchById = (pid) => {
-        const productById = productManager.find(productManager => productManager.id === pid)
-        return productById || `Error, product with id ${pid} not exist`
-    }
+    const productById = productManager.find(productManager => productManager.id === pid)
+    console.log(productById)
 
-    searchById(pid)
-     if(searchById){
-        res.send(searchById(pid)) 
+     if(productById){
+        return res.status(200).send(productById) 
     } else {
-        res.send()
+        return res.status(400).send(`Error, product with id ${pid} not exist`)
     } 
 
 })
